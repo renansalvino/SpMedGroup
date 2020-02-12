@@ -1,4 +1,6 @@
 USE SpMedGroup
+
+--Exercicio 13
 GO
 CREATE FUNCTION BuscarEspecialidade (@Especialidade INT)
 Returns table
@@ -15,3 +17,7 @@ INNER JOIN Especialidades
 ON Medico.IdEspecialidades = Especialidades.IdEspecialidades
 Inner join Clinica
 On Medico.IdClinica = Clinica.IdClinica
+
+-- Exercicio 12 -- 
+SELECT COUNT (IdProntuarios)as 'Numero de Pacientes' FROM Prontuarios
+
