@@ -78,3 +78,5 @@ IdAdministrador	INT FOREIGN KEY REFERENCES Administrador (IdAdministrador),
 IdProntuarios	INT FOREIGN KEY REFERENCES Prontuarios (IdProntuarios)
 );
 
+CREATE TABLE Usuarios 
+
